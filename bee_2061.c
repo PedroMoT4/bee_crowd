@@ -6,11 +6,6 @@ int main(){
     int n, m;
 
     scanf("%d %d", &n, &m);
-    
-    /*
-    fechou -1 +2 -> +1
-    clicou -1
-    */
 
     char acoes[60];
     char f[] = "fechou", c[] = "clicou";
