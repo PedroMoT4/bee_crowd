@@ -5,8 +5,12 @@ int main(){
     grenais = 0;
     ginter = 0;
     ggremio = 0;
+    vinter = 0;
+    vgremio = 0;
+    empates = 0;
 
     scanf("%d %d", &ginter, &ggremio);
+    grenais++;
     if(ginter > ggremio){
         vinter++;
     }else if(ginter < ggremio){
@@ -22,6 +26,7 @@ int main(){
         scanf("%d", &option);
         
         if(option == 1){
+            grenais++;
             scanf("%d %d", &ginter, &ggremio);
             if(ginter > ggremio){
                 vinter++;
@@ -40,9 +45,9 @@ int main(){
     }
 
     printf("%d grenais\n", grenais);
-    printf("Inter: %d\n", vinter);
-    printf("Gremio: %d\n", vgremio);
-    printf("Empates: %d\n", empates);
+    printf("Inter:%d\n", vinter);
+    printf("Gremio:%d\n", vgremio);
+    printf("Empates:%d\n", empates);
 
     if(vinter > vgremio){
         printf("Inter venceu mais\n");
